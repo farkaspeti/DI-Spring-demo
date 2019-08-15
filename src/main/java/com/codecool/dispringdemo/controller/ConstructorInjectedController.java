@@ -1,7 +1,7 @@
 package com.codecool.dispringdemo.controller;
 
 import com.codecool.dispringdemo.services.GreetingService;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 
 @Controller
@@ -9,8 +9,8 @@ public class ConstructorInjectedController {
     
     public GreetingService greetingService;
     
-    @Autowired //Not Necessary
-    public ConstructorInjectedController(GreetingService greetingService) {
+   
+    public ConstructorInjectedController(@Qualifier("constructorGreetingService") GreetingService greetingService) {
         this.greetingService = greetingService;
     }
     
