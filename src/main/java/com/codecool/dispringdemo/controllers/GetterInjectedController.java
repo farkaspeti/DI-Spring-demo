@@ -1,4 +1,4 @@
-package com.codecool.dispringdemo.controller;
+package com.codecool.dispringdemo.controllers;
 
 import com.codecool.dispringdemo.services.GreetingService;
 import org.springframework.beans.factory.annotation.Autowired;

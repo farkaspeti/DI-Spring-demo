@@ -1,7 +1,6 @@
 package com.codecool.dispringdemo.controllers;
 
 
-import com.codecool.dispringdemo.controller.PropertyInjectedController;
 import com.codecool.dispringdemo.services.GreetingServiceImpl;
 import org.junit.Before;
 import org.junit.Test;
